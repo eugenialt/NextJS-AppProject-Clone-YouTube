@@ -1,9 +1,18 @@
+"use client";
+import React , {useState} from 'react'
+import './dashboard.css'
+import SideNav from '../ui/dashboard/navigation/sidenav';
+import Navbar from '../ui/dashboard/navigation/navbar';
+import Link from 'next/link';
 
- 
-export default async function Page() {
+export default function Page() {  
+  const [sidebar, setSidebar] = useState(true)
   return (
-    <main>
-     <div>dashboard</div> 
-    </main>
+    <>
+    <Navbar />
+
+    
+    
+    </>
   );
 }
