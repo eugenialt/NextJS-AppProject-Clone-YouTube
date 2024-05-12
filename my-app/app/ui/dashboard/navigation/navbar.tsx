@@ -1,4 +1,4 @@
-
+"use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
 import menu_icon from "@/assets/menu.png"
@@ -40,7 +40,7 @@ const Navbar = () => {
           <Image src={profile_icon} className="user-icon" alt="" />
       </div>
       {isClick && <SideNav />}
-    </nav>
+      </nav>
   )
 }
 

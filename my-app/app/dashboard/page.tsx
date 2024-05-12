@@ -1,18 +1,17 @@
-"use client";
-import React , {useState} from 'react'
+import React from 'react'
 import './dashboard.css'
-import SideNav from '../ui/dashboard/navigation/sidenav';
-import Navbar from '../ui/dashboard/navigation/navbar';
-import Link from 'next/link';
+import Feed from './Feed/page';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home | Youtube App",
+};
 
 export default function Page() {  
-  const [sidebar, setSidebar] = useState(true)
-  return (
-    <>
-    <Navbar />
 
-    
-    
-    </>
+  return ( 
+    <>
+      <Feed />
+       </>
   );
 }
