@@ -5,7 +5,7 @@
 // Компонент <Layout />получает childrenсвойство. Этот дочерний элемент может быть страницей или другим макетом
 import { Metadata } from "next";
 import './dashboard.css'
-import Navbar from "../ui/dashboard/navigation/navbar";
+import Navbar from "../ui/dashboard/Navbar/navbar";
 
 export const metadata: Metadata = {
   title: "YouTube Clone",

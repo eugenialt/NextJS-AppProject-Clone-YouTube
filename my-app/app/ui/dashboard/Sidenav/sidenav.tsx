@@ -1,7 +1,7 @@
-import NavLinks from './nav-links';
+import NavLinks from '../Nav-links/nav-links';
 import React from 'react';
 import Image from 'next/image';
-import '../styles/sidenav.css';
+import './sidenav.css';
 import home from '@/assets/home.png';
 import game_icon from '@/assets/game_icon.png';
 import automobiles from '@/assets/automobiles.png';

@@ -8,8 +8,8 @@ import upload_icon from "@/assets/upload.png"
 import more_icon from "@/assets/more.png"
 import notification_icon from "@/assets/notification.png"
 import profile_icon from "@/assets/jack.png"
-import '../styles/navbar.css';
-import SideNav from './sidenav';
+import './navbar.css';
+import SideNav from '../Sidenav/sidenav';
 
 const Navbar = () => {
 
