@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import video from '../video.mp4'
@@ -9,13 +10,25 @@ import save from '@/assets/save.png'
 import jack from '@/assets/jack.png'
 import user_profile from '@/assets/user_profile.jpg'
 import '../PlayVideo/playVideo.css'
+import { useParams } from 'next/navigation'
+import VideoId from './video/[id]'
 
 const PlayVideo = () => {
+  const { videoId } = useParams();
   return (
-    <>
-    
-    <div className='play-video'>
-      <Image src={videoPick}  alt='' className="video-pick"/>
+    <div className="play-video">
+      <VideoId videoId={videoId} />
+      {/* <iframe
+        src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+        title="Video Player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe> */}
+      
+
+      {/* <Image src={videoPick}  alt='' className="video-pick"/> */}
       {/* <video src={video} controls autoPlay muted></video> */}
       <h3>Best channel to learn coding that help you to be a web developer</h3>
       <div className="play-video-info">
@@ -95,7 +108,7 @@ const PlayVideo = () => {
       </div>
     </div>
     </div>
-    </>
+    
   )
 }
 

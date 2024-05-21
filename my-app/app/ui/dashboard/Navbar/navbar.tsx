@@ -13,6 +13,7 @@ import SideNav from '../Sidenav/sidenav';
 
 const Navbar = () => {
 
+  const [category, setCategory] = useState(0);
   const [isClick, setisClick] = useState(true);
 
   const toggleNavbar = () => {
@@ -39,7 +40,7 @@ const Navbar = () => {
           <Image src={notification_icon} alt="" />
           <Image src={profile_icon} className="user-icon" alt="" />
       </div>
-      {isClick && <SideNav />}
+      {isClick && <SideNav category={category} setCategory={setCategory}/>}
       </nav>
   )
 }
